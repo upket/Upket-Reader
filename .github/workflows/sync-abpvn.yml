@@ -1,0 +1,58 @@
+name: Sync ABPVN filter
+
+on:
+  schedule:
+    - cron: "0 */6 * * *" # mỗi 6 giờ (UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-abpvn
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download ABPVN list
+        run: |
+          curl -fsSL --retry 3 \
+            https://raw.githubusercontent.com/abpvn/abpvn/master/filter/abpvn.txt \
+            -o "$RUNNER_TEMP/abpvn.txt"
+
+      - name: Clean up and write ad-blocker/upket-vi.txt
+        run: |
+          # - Giữ dòng đầu tiên ([Adblock Plus 2.0])
+          # - Xóa khối dòng "!" liền sau đó (header)
+          # - Các dòng "!" còn lại: xóa chữ "ABPVN"
+          awk '
+            NR == 1 { print; next }
+            header && /^!/ { next }
+            { header = 0 }
+            /^!/ { gsub(/ABPVN ?/, "") }
+            { print }
+          ' header=1 "$RUNNER_TEMP/abpvn.txt" > "$RUNNER_TEMP/upket-vi.txt"
+
+          # Không ghi đè nếu file tải về bất thường
+          if [ "$(wc -l < "$RUNNER_TEMP/upket-vi.txt")" -lt 100 ]; then
+            echo "Downloaded list looks too small, aborting." >&2
+            exit 1
+          fi
+
+          mv "$RUNNER_TEMP/upket-vi.txt" ad-blocker/upket-vi.txt
+
+      - name: Commit and push if changed
+        run: |
+          if git diff --quiet -- ad-blocker/upket-vi.txt; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ad-blocker/upket-vi.txt
+          git commit -m "Update upket-vi.txt from ABPVN"
+          git push
