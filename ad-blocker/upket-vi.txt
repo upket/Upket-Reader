@@ -192,7 +192,7 @@ $popup,domain=truyenfull.live
 ||tinmoi.vn/?mod=ajax&act=getAds
 ||tinxe.vn/Banner/LoadBanner$xmlhttprequest
 ||tinxe.vn/bn-campaign-for-iframe$subdocument,~third-party
-||tophim.click^*.gif$image,~third-party
+||tophim.pics^*.gif$image,~third-party
 ||traderviet.tv/data/siropu/am/user/$image
 ||tructiep.vn/website/adv/
 ||truyenqqko.com/api/widget/data$xmlhttprequest
@@ -606,10 +606,10 @@ phimdacap.tv###ads-popup
 phimmoic.vc##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0.fixed
 phimmoichillz.top###pm_quangcao
 phimmoichillz.top###preload
-phimmoihd.store##.\32 xl\:left-2.sm\:left-1.left-0.-translate-y-1\/2.z-40.top-1\/2.fixed
-phimmoihd.store##.\32 xl\:right-2.sm\:right-1.right-0.-translate-y-1\/2.z-40.top-1\/2.fixed
-phimmoihd.store##.p-4.bg-black\/70.overflow-y-auto.justify-center.items-center.flex.z-\[70\].inset-0.fixed
-phimmoihd.store##.pt-3.pb-1.px-2.z-\[60\].bottom-0.inset-x-0.fixed
+phimmoihd.shop##.\32 xl\:left-2.sm\:left-1.left-0.-translate-y-1\/2.z-40.top-1\/2.fixed
+phimmoihd.shop##.\32 xl\:right-2.sm\:right-1.right-0.-translate-y-1\/2.z-40.top-1\/2.fixed
+phimmoihd.shop##.p-4.bg-black\/70.overflow-y-auto.justify-center.items-center.flex.z-\[70\].inset-0.fixed
+phimmoihd.shop##.pt-3.pb-1.px-2.z-\[60\].bottom-0.inset-x-0.fixed
 phunumoi.net.vn,nhipcaudautu.vn,vnexpress.net##div[id^="ads_"]
 phuongtrinhhoahoc.com##.shadow-card + .mt-2
 plcdn.xyz,xoilac.livecdnem.com##.odds-button
@@ -913,13 +913,13 @@ www.vnjpclub.com#@#.adunit
 /^https:\/\/[a-z]{8,12}\.com\/en\/(?:[a-z]{2,5}\/){0,2}[a-z]{2,}\?(?:[a-z]+=(?:\d+|[a-z]+)&)*?id=[12]\d{6}/$script,third-party
 /assets/js/vast.js$script
 /jwplayer/vast.js$script
-/player/html.php?aid=*&video_id=*&referer=https*xnhau.moda$domain=xnhau.moda
+/player/html.php?aid=*&video_id=*&referer=https*xnhau.plus$domain=xnhau.plus
 /player/vast.js$script
 /wp-content/uploads/*.gif$image,domain=www.hayvn.net|truyennung.net
 @@||cdn.adxcontent.com/vlxx/vl-inplayer-adx.js
 @@||pagead2.googlesyndication.com^$domain=gaingon3d.com|cap3.video|qmh.garden
 docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
-||ads.bizwd.net^$image,domain=rigsbysgardencenter.com
+||ads.bizwd.net^$image,domain=domusangularia.com
 ||agtcmuohbt.in^
 ||blogger.googleusercontent.com^*.gif$image,domain=www.gvnvh18z.com
 ||bullionglidingscuttle.com/lv/esnk/2031811/code.js$domain=lxmanga.top,rewrite=abp-resource:blank-js
@@ -939,7 +939,7 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||hentaivn.show/banner_image/$image
 ||hhkungfu.us^*.gif$image,domain=x.chinav.sex|x.phimsexvn1.co.uk
 ||i.ibb.co^*.gif$image,domain=sex.javnong.cc
-||i.imgur.com^$image,domain=phim18hd.site|xamvn.lat
+||i.imgur.com^$image,domain=phim18hd.site|xamvn.team
 ||i.imgur.com^*.gif$image,domain=x.chinav.sex|quatvn.stream
 ||img.congdongmassage.com/banner/$image,domain=congdongmassage.com
 ||javhdz.page/js/ads-javhd.js$script,~third-party
@@ -978,7 +978,7 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||xamer.xyz/styles/file/$image
 ||xfast.sbs/media/$image,domain=fullcliphot.org|fulllivehot.us
 ||xfast.sbs^*.gif$image,domain=clipphot.co
-||xnhau.blog^$media,domain=xnhau.moda
+||xnhau.blog^$media,domain=xnhau.plus
 !---------- Adult Element Hide ---------------
 18tube.uk##.ads-gated
 @@||lxmanga.top$generichide
@@ -996,11 +996,12 @@ buomtv.biz##.pointer-events-auto.block
 buomtv.biz##.zbgpvb19.zbgpvb16.zbgpvbj.zbgpvbh.zbgpvbg.zbgpvbf.zbgpvbe.zbgpvb1
 cap3.video,qmh.garden###catfish-ad-banner
 cap3.video,qmh.garden#@##ad-wrapper
-choigai.mobi,sexmupxinh.net,gaisexhihi.pro##.xx-ads
 cliphot69.golf###custom_html-42
-cliphotvn69.com,dynadot.rsocdomains.com,cliphot69.golf,www.gvnvh18z.com,phimsexhayvne.com,sayhentai.cx,xamvn.lat,sexviet69.cc##.float-ck-center-lt
+cliphotvn69.com,dynadot.rsocdomains.com,cliphot69.golf,www.gvnvh18z.com,phimsexhayvne.com,sayhentai.cx,xamvn.team,sexviet69.cc##.float-ck-center-lt
 damconuong.help##.catfish-ad
 damconuong.help##a[rel="nofollow"]
+domusangularia.com###popup-ad-box
+domusangularia.com##.banner-ad
 fullcliphot.org##div#recent-content:nth-of-type(1)
 fullcliphot.org,fulllivehot.us,clipphot.co##.cashfish
 fullcliphot.org,fulllivehot.us,clipphot.co##.mini-player
@@ -1039,8 +1040,6 @@ quatvn.stream###popupBanner
 quatvn.stream###popupOverlay
 quatvn.stream###stickyFooterAds
 quatvn.stream###topBannerAds
-rigsbysgardencenter.com###popup-ad-box
-rigsbysgardencenter.com##.banner-ad
 rphang.fund###aboveFirstPost
 rphang.fund##.bbMediaWrapper-inner>.samCodeUnit
 rphang.fund##.js-replyNewMessageContainer.block-body>div.samCodeUnit>.samItem
@@ -1092,16 +1091,17 @@ x.chinav.sex##.banner-container
 x.phimsexvn1.co.uk###ads-wrapper
 x.phimsexvn1.co.uk###cashfit-spacer
 x.phimsexvn1.co.uk##.ads-header
-xamvn.lat##.float-contact
-xamvn.lat##.float-contact2
-xamvn.lat##.js-notices
+xamvn.team##.float-contact
+xamvn.team##.float-contact2
+xamvn.team##.js-notices
+xemphim3x.pro,sexmupxinh.net,gaisexhihi.pro##.xx-ads
 xfast.sbs###overlay
 xiuren.org###bannerIn
 xiuren.org###exoIMFrame
 xiuren.org###nativeAds_1505931906161
 xiuren.org##div[id^="exo_slider_"]
-xnhau.moda##.fp-ui>div[style]
-xnhau.moda##.sponsor
-xnhau.moda##.spot
+xnhau.plus##.fp-ui>div[style]
+xnhau.plus##.sponsor
+xnhau.plus##.spot
 xnxx.com###content-ad-top-zone
 zpic.org##.ad-banner
